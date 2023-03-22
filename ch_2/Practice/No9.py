@@ -30,7 +30,7 @@ while(True):
     if cv.waitKey(1) == ord('q'):
         cv.destroyAllWindows()
         break
-    elif cv.waitKey(1) == ord('+'):
+    elif cv.waitKey(1) == ord('+'): # + 누를 경우, BrushSiz +1 이 되도록
         BrushSiz = BrushSiz + 1
-    elif cv.waitKey(1) == ord('-'):
+    elif cv.waitKey(1) == ord('-'): # - 누를 경우, BrushSiz -1 이 되도록
         BrushSiz = BrushSiz -1

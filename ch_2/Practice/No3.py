@@ -10,6 +10,7 @@ if __name__ == '__main__':
     elif img2 is None:
         sys.exit("파일2를 찾을 수 없습니다.")
 
+    # 이미지 2개 다른 화면에 불러오기
     cv.imshow("Img1", img1)
     cv.imshow("Img2",img2)
 

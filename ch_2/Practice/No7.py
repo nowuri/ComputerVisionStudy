@@ -9,7 +9,7 @@ if img is None:
 def draw(event, x, y, flags, param):
     if event == cv.EVENT_LBUTTONDOWN:
         cv.rectangle(img,(x,y),(x+200,y+200),(0,0,255),2)
-    elif event == cv.EVENT_RBUTTONDOWN:
+    elif event == cv.EVENT_RBUTTONDOWN: # 오른쪽 마우스는 원을 그리도록 함
         cv.circle(img,(x,y),20,(255,0,0),2)
 
     cv.imshow('Drawing',img)
