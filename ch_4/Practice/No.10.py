@@ -41,8 +41,6 @@ while (True):
         if cv.waitKey(1) == ord('q'):  # 붓칠 끝내려면 q
             break
 
-    # mask_save = np.copy(mask)
-
     # GrabCut 적용 코드
     background = np.zeros((1, 65), np.float64)  # 배경 히스토그램 생성, 0 초기화, 실수 표현, 65개 칸을 가짐
     foreground = np.zeros((1, 65), np.float64)  # 물체 히스토그램 생성, 0 초기화, 실수 표현, 65개 칸을 가짐
@@ -63,6 +61,5 @@ while (True):
     if cv.waitKey() == ord('q'):
         break
 
-    # mask = mask_save
     cv.destroyWindow("Grab cut image")
 cv.destroyAllWindows()
